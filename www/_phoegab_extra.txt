@@ -1,0 +1,8 @@
+	<script src="../cordova-2.3.0.js"></script>
+	<script>
+		document.addEventListener('deviceready', function() {
+			console.log("offline");
+			var controller = new MLearning.Pages.Offline.Controller();
+			controller.listenForPageChanges();
+		}, false);	
+	</script>
