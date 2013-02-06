@@ -15,12 +15,12 @@ var MLearning;
             NewTest.prototype.onReady = function (_data) {
                 _super.prototype.onReady.call(this, _data);
                 var data = _data;
-                var queryString = $.parsequery(location.href);
+                var queryString = $.parsequery(location.href.toLowerCase());
                 if(!data) {
                     data = {
                     };
-                    data.levelId = +queryString.get("levelId");
-                    data.courseId = +queryString.get("courseId");
+                    data.levelId = +queryString.get("levelid");
+                    data.courseId = +queryString.get("courseid");
                 }
                 this._testInitializationData = data;
                 _super.prototype._registerTouchWipe.call(this);
