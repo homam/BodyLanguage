@@ -7,3 +7,4 @@ _Store
 *~.nib/
 build/*
 xcuserdata
+.DS_Store
