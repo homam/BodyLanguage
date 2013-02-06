@@ -1,0 +1,265 @@
+﻿/*---------------------------------------------------
+    LESS Prefixer
+  ---------------------------------------------------
+    
+    All of the CSS3 fun, none of the prefixes!
+
+    As a rule, you can use the CSS properties you
+    would expect just by adding a '.':
+
+    box-shadow => .box-shadow(@args)
+
+    Also, when shorthand is available, arguments are
+    not parameterized. Learn CSS, not LESS Prefixer.
+
+    -------------------------------------------------
+	TABLE OF CONTENTS
+	(*) denotes a syntax-sugar helper
+	-------------------------------------------------
+
+		.animation(@args)
+			.animation-delay(@delay)
+			.animation-direction(@direction)
+			.animation-duration(@duration)
+			.animation-iteration-count(@count)
+			.animation-name(@name)
+			.animation-play-state(@state)
+			.animation-timing-function(@function)
+		.background-size(@args)
+		.border-radius(@args)
+		.box-shadow(@args)
+			.inner-shadow(@args) *
+		.box-sizing(@args)
+			.border-box() *
+			.content-box() *
+		.columns(@args)
+			.column-count(@count)
+			.column-gap(@gap)
+			.column-rule(@args)
+			.column-width(@width)
+		.gradient(@default,@start,@stop) *
+            .linear-gradient-top(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
+            .linear-gradient-left(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
+		.opacity(@factor)
+		.transform(@args)
+			.rotate(@deg)
+			.scale(@factor)
+			.translate(@x,@y)
+			.translate3d(@x,@y,@z)
+			.translateHardware(@x,@y) *
+        .text-shadow(@args)
+		.transition(@args)
+			.transition-delay(@delay)
+			.transition-duration(@duration)
+			.transition-property(@property)
+			.transition-timing-function(@function)
+
+
+
+	Credit to LESS Elements for the motivation and
+	to CSS3Please.com for implementation.
+
+	Copyright (c) 2012 Joel Sutherland
+	MIT Licensed:
+	http://www.opensource.org/licenses/mit-license.php
+
+-----------------------------------------------------*/
+/* Animation */
+/* Background Size */
+/* Border Radius */
+/* Box Shadows */
+/* Box Sizing */
+/* Columns */
+/* Gradients */
+/* Opacity */
+/* Text Shadow */
+/* Transforms */
+/* Transitions */
+.flashcards-container {
+  clear: both;
+}
+.flashcards-container .step {
+  display: none;
+}
+.flashcards-container .step.start,
+.flashcards-container .step.finish {
+  text-align: center;
+}
+.flashcards-container .step.start .content,
+.flashcards-container .step.finish .content {
+  margin: 10px 0;
+}
+.flashcards-container .step.start .content h1,
+.flashcards-container .step.finish .content h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #007200;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.flashcards-container .step.start .content h2,
+.flashcards-container .step.finish .content h2,
+.flashcards-container .step.start .content h3,
+.flashcards-container .step.finish .content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #171b18;
+  margin: 10px 0;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.flashcards-container .step.start .content h4,
+.flashcards-container .step.finish .content h4 {
+  font-size: 12px;
+  color: #808080;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.flashcards-container .step.start .content .score,
+.flashcards-container .step.finish .content .score {
+  font-size: 58px;
+  font-weight: bold;
+  color: #007200;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.flashcards-container .step.start .content .levelStars,
+.flashcards-container .step.finish .content .levelStars {
+  margin-top: 32px;
+}
+.flashcards-container .step.start .content .star,
+.flashcards-container .step.finish .content .star {
+  font-size: 24px;
+}
+.flashcards-container .step.start .content .rating,
+.flashcards-container .step.finish .content .rating {
+  margin: -30px 0 0 0;
+}
+.flashcards-container .step:first-child {
+  display: block;
+}
+/*
+	
+	
+	
+	
+	
+		OBSOLETE
+		USE NEWTEST INSTEAD	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+*/
+.page-Test .test-page-content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.page-Test .test-page-content .flashcards-container .questionHolder {
+  padding: 10px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #908f8f;
+  box-shadow: 0px 1px 2px #fafafa;
+}
+.page-Test .test-page-content .flashcards-container .questionHolder h1 {
+  margin: 5px;
+  color: #0068B5;
+}
+.page-Test .test-page-content .flashcards-container .questionHolder h2 {
+  font-weight: bold;
+  color: #252525;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice {
+  text-align: center;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .panel {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #908f8f;
+  box-shadow: 0px 1px 2px #fafafa;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .panel h1 {
+  color: #0068B5;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .panel h2 {
+  color: #252525;
+  font-weight: bold;
+  margin: 10px 10px 5px 10px;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .choice {
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 8px 10px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #0068B5;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .choice:hover {
+  background-color: #FFFF7F;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .choice .letter {
+  display: table-cell;
+  padding: 11px 10px 10px 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  background-color: #0068B5;
+  vertical-align: middle;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .choice .text {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  height: 36px;
+  padding: 8px 25px 8px 5px;
+  text-shadow: none;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .choice.selected.correct {
+  color: white;
+  background-color: #56a237;
+  border: 1px solid #56a237;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right center;
+  background-image: url(/shared/images/course/correct.png);
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice .choice.selected.wrong {
+  color: white;
+  background-color: #c44040;
+  border: 1px solid #c44040;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right center;
+  background-image: url(/shared/images/course/wrong.png);
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice img {
+  margin-top: 10px;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice.withImage .choice .letter {
+  font-weight: bold;
+  padding: 78px 10px;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice.withImage .choice .text {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 5px;
+  min-height: 160px;
+}
+.page-Test .test-page-content .flashcards-container .test.multipleChoice.withImage img {
+  width: 160px;
+  border: 1px solid #ccc;
+}
+.page-Test .test-page-content .content.test-succeed .test-failed {
+  display: none;
+}
+.page-Test .test-page-content .content.test-failed .test-succeed {
+  display: none;
+}

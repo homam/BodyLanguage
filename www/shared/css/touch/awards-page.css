@@ -1,0 +1,72 @@
+﻿.page-Awards {
+  background-color: #dedbca;
+}
+.page-Awards .award-list {
+  text-shadow: 0 1px 0 white;
+}
+.page-Awards .award-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-Awards .award-list li {
+  height: 80px;
+  display: block;
+  background-color: #dedbca;
+  box-shadow: inset 0 1px 0 #e9e6d9;
+  border-bottom: 1px solid #b4af93;
+}
+.page-Awards .award-list img {
+  float: left;
+  width: 70px;
+  height: 80px;
+  display: block;
+  margin-right: 10px;
+}
+.page-Awards .award-list h1,
+.page-Awards .award-list h2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.page-Awards .award-list h1 {
+  font-size: 18px;
+  color: #bb1c2f;
+  line-height: 22px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+.page-Awards .award-list h2 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #696967;
+}
+.page-Awards .award-list .unlockOn,
+.page-Awards .award-list .date {
+  display: inline-block;
+}
+.page-Awards .award-list .unlockOn {
+  font-size: 12px;
+  font-weight: bold;
+  color: #272727;
+}
+.page-Awards .award-list .date {
+  font-size: 12px;
+  font-weight: bold;
+  color: #bb1c2f;
+}
+.page-Awards .award-list .progress {
+  width: 70px;
+  display: block;
+  color: #696967;
+  font-size: 20px;
+  padding: 20px 0;
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+}
+.page-Awards .award-list .locked h1 {
+  color: #696967;
+}

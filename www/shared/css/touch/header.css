@@ -1,0 +1,24 @@
+﻿.header {
+  left: 0;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: 38px;
+  background-color: #333;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  text-overflow: hidden;
+}
+.header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.header.normal {
+  position: absolute;
+}
+.header.fixed {
+  position: fixed;
+}

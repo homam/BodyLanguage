@@ -1,0 +1,279 @@
+﻿/*#region Effects */
+.stacked-paper {
+  width: auto;
+  margin: 5px 10px 30px 10px;
+  padding: 10px 10px 15px 10px;
+  background: #eee;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), /* The top layer shadow */
+ 0 7px 0 -5px #eeeeee, /* The second layer */
+ 0 8px 4px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */
+ 0 8px 8px -5px #eeeeee, /* The third layer */
+ 0 10px -6px -9px rgba(0, 0, 0, 0.15);
+  /* The third layer shadow */
+
+  background: #eeeeee;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 20%, #ffffff 80%, #eeeeee 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(20%, #ffffff), color-stop(80%, #ffffff), color-stop(100%, #eeeeee));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 20%, #ffffff 80%, #eeeeee 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #eeeeee 0%, #ffffff 20%, #ffffff 80%, #eeeeee 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 20%, #ffffff 80%, #eeeeee 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 20%, #ffffff 80%, #eeeeee 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+  /* IE6-9 */
+
+}
+.shadow {
+  -webkit-box-shadow: inset 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 15px 15px -20px rgba(0, 0, 0, 0.5);
+  -webkit-mask-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
+  -moz-mask-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
+  min-height: 20px;
+  width: auto;
+  position: relative;
+  content: '';
+  bottom: -10px;
+  left: 0;
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+}
+/* Level Stars */
+.star {
+  color: #999;
+  padding: 0 3px 0 3px;
+}
+.star.awarded {
+  color: #F8B508;
+}
+/*#endregion */@media only screen and (min-width: 526px) {
+  .course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Flow img {
+    max-height: 350px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Flow img {
+    max-height: 250px;
+  }
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content {
+  /*
+        h3 {
+            color: #941c3c;
+            text-shadow: 0 1px #dedcd2;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 14px;
+            text-align: left;
+            line-height: 20px;
+            text-shadow: 0 1px #dedcd2;
+        }
+*/
+
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Flow img {
+  display: block;
+  margin: auto;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Blocks .textBlock {
+  margin: 0;
+  padding: 10px 10px;
+  border-top: solid 1px silver;
+  text-align: left;
+  line-height: 16px;
+  background-color: whitesmoke;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Blocks .textBlock img {
+  float: right;
+  width: 120px;
+  height: 120px;
+  margin-left: 1em;
+  border: 1px solid silver;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Blocks .textBlock p {
+  display: inline;
+  margin: 0;
+  height: 120px;
+  padding: 0;
+  vertical-align: middle;
+  overflow: visible;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-Blocks .textBlock:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-ImageAndTitleBlocks .textBlock {
+  width: 300px;
+  margin: 0 auto 1em auto;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-ImageAndTitleBlocks .textBlock img {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .layout-ImageAndTitleBlocks .textBlock .title {
+  margin-bottom: .2em;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .tip {
+  position: relative;
+  margin: 1em 1em 1em 1em;
+  padding: 1.8em 1em 1em 1em;
+  color: #941c3c;
+  border: dashed 2px #941c3c;
+  background-color: #fefefe;
+}
+.course-NegotiationSkills.page-NewFlashCards .level-step .step-content .tip:before {
+  content: 'Tip!';
+  position: absolute;
+  background-color: #941c3c;
+  color: white;
+  width: 2em;
+  top: -2px;
+  left: -2px;
+  padding: .2em .2em .2em .4em;
+}
+.course-NegotiationSkills.page-NewFlashCards .textBlock {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 16px;
+}
+.course-NegotiationSkills.page-NewFlashCards .textBlock h4.title {
+  color: #941c3c;
+  text-align: left;
+  margin: .2em 10px 10px 10px;
+  padding: 0;
+  font-weight: bold;
+  text-shadow: none;
+}
+.course-NegotiationSkills.page-NewFlashCards .textList {
+  margin: 0 0 .5em 0;
+  padding: 0;
+}
+.course-NegotiationSkills.page-NewFlashCards .textList li {
+  list-style: none;
+  text-align: left;
+  text-shadow: 0 1px #dedcd2;
+}
+.course-NegotiationSkills.page-NewFlashCards .textList li:before {
+  content: '-';
+}
+.course-NegotiationSkills.page-NewFlashCards .textList.Sparse li {
+  margin-bottom: 1em;
+}
+@media only screen and (max-width: 360px) {
+  .course-NegotiationSkills.page-NewFlashCards .popup-content {
+    left: 0;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 361px) {
+  .course-NegotiationSkills.page-NewFlashCards .level-step .step-content .flashCard .layout-Blocks .textBlock p {
+    display: table-cell;
+  }
+  .course-NegotiationSkills.page-NewFlashCards .popup-content {
+    left: 0;
+    right: 0;
+  }
+}
+.course-NegotiationSkills.page-NewFlashCards .popup .title {
+  display: block;
+  border: solid 1px silver;
+  border-radius: 8px;
+  text-align: left;
+  margin: 3px 10px 0 10px;
+  padding: 15px 10px;
+  background-color: white;
+  background-image: url(../../../images/NegotiationSkills/arrow-single.png);
+  background-repeat: no-repeat;
+  background-position: 99% 50%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content {
+  -webkit-transition: all 1s ease-in-out;
+  -webkit-transform: translate(0, 200%);
+  position: fixed;
+  bottom: 0;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #b42737;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content .close img {
+  vertical-align: middle;
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content .popup-content-wrap {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dedbc9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -30px 15px rgba(0, 0, 0, 0.2), 0 -2px 10px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content .popup-content-wrap:before {
+  content: attr(data-title);
+  padding: 1em;
+  color: #b42737;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content p,
+.course-NegotiationSkills.page-NewFlashCards .popup-content .textList {
+  padding: 0 1em 1em 1em;
+}
+.course-NegotiationSkills.page-NewFlashCards .popup-content.show {
+  visibility: visible;
+  overflow: auto;
+  -webkit-transform: translate(0, 0);
+}
+.course-NegotiationSkills.page-NewFlashCards .step-flashcard h3 {
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #65061f;
+  background-color: #941c3c;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-shadow: 0 1px 0 #7d1126;
+  box-shadow: inset 0 1px 0 #ab375c;
+}
+.course-NegotiationSkills.page-NewFlashCards .step-flashcard p {
+  padding: 10px;
+  color: #525252;
+  text-align: left;
+  line-height: 16px;
+  font-size: 14px;
+}
+.course-NegotiationSkills.page-NewFlashCards .step-flashcard .textBlock {
+  margin: 0;
+}

@@ -1,0 +1,411 @@
+﻿/*---------------------------------------------------
+    LESS Prefixer
+  ---------------------------------------------------
+    
+    All of the CSS3 fun, none of the prefixes!
+
+    As a rule, you can use the CSS properties you
+    would expect just by adding a '.':
+
+    box-shadow => .box-shadow(@args)
+
+    Also, when shorthand is available, arguments are
+    not parameterized. Learn CSS, not LESS Prefixer.
+
+    -------------------------------------------------
+	TABLE OF CONTENTS
+	(*) denotes a syntax-sugar helper
+	-------------------------------------------------
+
+		.animation(@args)
+			.animation-delay(@delay)
+			.animation-direction(@direction)
+			.animation-duration(@duration)
+			.animation-iteration-count(@count)
+			.animation-name(@name)
+			.animation-play-state(@state)
+			.animation-timing-function(@function)
+		.background-size(@args)
+		.border-radius(@args)
+		.box-shadow(@args)
+			.inner-shadow(@args) *
+		.box-sizing(@args)
+			.border-box() *
+			.content-box() *
+		.columns(@args)
+			.column-count(@count)
+			.column-gap(@gap)
+			.column-rule(@args)
+			.column-width(@width)
+		.gradient(@default,@start,@stop) *
+            .linear-gradient-top(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
+            .linear-gradient-left(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
+		.opacity(@factor)
+		.transform(@args)
+			.rotate(@deg)
+			.scale(@factor)
+			.translate(@x,@y)
+			.translate3d(@x,@y,@z)
+			.translateHardware(@x,@y) *
+        .text-shadow(@args)
+		.transition(@args)
+			.transition-delay(@delay)
+			.transition-duration(@duration)
+			.transition-property(@property)
+			.transition-timing-function(@function)
+
+
+
+	Credit to LESS Elements for the motivation and
+	to CSS3Please.com for implementation.
+
+	Copyright (c) 2012 Joel Sutherland
+	MIT Licensed:
+	http://www.opensource.org/licenses/mit-license.php
+
+-----------------------------------------------------*/
+/* Animation */
+/* Background Size */
+/* Border Radius */
+/* Box Shadows */
+/* Box Sizing */
+/* Columns */
+/* Gradients */
+/* Opacity */
+/* Text Shadow */
+/* Transforms */
+/* Transitions */
+.chapter-button {
+  text-align: left;
+  margin: 5px 10px;
+  padding: 10px 10px 12px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 12px;
+}
+.chapter-button .icon {
+  width: 60px;
+  height: 60px;
+  display: inline-table;
+  vertical-align: middle;
+}
+.chapter-button .linkName {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-table;
+  vertical-align: middle;
+}
+.chapter-button.quiz {
+  border: 1px solid #840915;
+  box-shadow: inset 0px 1px #ffc429;
+  background-color: #f7801d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffa510), color-stop(100% #f7801d));
+  background-image: -webkit-linear-gradient(top, #ffa510 0%, #f7801d 100%);
+  background-image: -moz-linear-gradient(top, #ffa510 0%, #f7801d 100%);
+  background-image: -ms-linear-gradient(top, #ffa510 0%, #f7801d 100%);
+  background-image: -o-linear-gradient(top, #ffa510 0%, #f7801d 100%);
+  background-image: linear-gradient(top, #ffa510 0%, #f7801d 100%);
+}
+.chapter-button.quiz .linkName {
+  color: #511d01;
+  text-shadow: 0 0 1px #fcbe48;
+}
+.chapter-button.quiz .icon {
+  background-image: url(../../images/other-icons/icon-takequiz.png);
+}
+.chapter-button.review {
+  border: 1px solid #044800;
+  box-shadow: inset 0px 1px #44c216;
+  background-color: #018c00;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #48a513), color-stop(100% #018c00));
+  background-image: -webkit-linear-gradient(top, #48a513 0%, #018c00 100%);
+  background-image: -moz-linear-gradient(top, #48a513 0%, #018c00 100%);
+  background-image: -ms-linear-gradient(top, #48a513 0%, #018c00 100%);
+  background-image: -o-linear-gradient(top, #48a513 0%, #018c00 100%);
+  background-image: linear-gradient(top, #48a513 0%, #018c00 100%);
+}
+.chapter-button.review .linkName {
+  color: #032801;
+  text-shadow: 0 0 1px #4dc31a;
+}
+.chapter-button.review .icon {
+  background-image: url(../../images/other-icons/icon-review.png);
+}
+.chapter-button.other {
+  border: 1px solid #023271;
+  box-shadow: inset 0px 1px #4396d9;
+  background-color: #1455ac;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #247acb), color-stop(100% #1455ac));
+  background-image: -webkit-linear-gradient(top, #247acb 0%, #1455ac 100%);
+  background-image: -moz-linear-gradient(top, #247acb 0%, #1455ac 100%);
+  background-image: -ms-linear-gradient(top, #247acb 0%, #1455ac 100%);
+  background-image: -o-linear-gradient(top, #247acb 0%, #1455ac 100%);
+  background-image: linear-gradient(top, #247acb 0%, #1455ac 100%);
+}
+.chapter-button.other .linkName {
+  color: #002351;
+  text-shadow: 0 0 1px #3481c9;
+}
+.chapter-button.other .icon {
+  background-image: url(../../images/other-icons/icon-courses.png);
+}
+/*---------------------------------------------------
+    LESS Prefixer
+  ---------------------------------------------------
+    
+    All of the CSS3 fun, none of the prefixes!
+
+    As a rule, you can use the CSS properties you
+    would expect just by adding a '.':
+
+    box-shadow => .box-shadow(@args)
+
+    Also, when shorthand is available, arguments are
+    not parameterized. Learn CSS, not LESS Prefixer.
+
+    -------------------------------------------------
+	TABLE OF CONTENTS
+	(*) denotes a syntax-sugar helper
+	-------------------------------------------------
+
+		.animation(@args)
+			.animation-delay(@delay)
+			.animation-direction(@direction)
+			.animation-duration(@duration)
+			.animation-iteration-count(@count)
+			.animation-name(@name)
+			.animation-play-state(@state)
+			.animation-timing-function(@function)
+		.background-size(@args)
+		.border-radius(@args)
+		.box-shadow(@args)
+			.inner-shadow(@args) *
+		.box-sizing(@args)
+			.border-box() *
+			.content-box() *
+		.columns(@args)
+			.column-count(@count)
+			.column-gap(@gap)
+			.column-rule(@args)
+			.column-width(@width)
+		.gradient(@default,@start,@stop) *
+            .linear-gradient-top(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
+            .linear-gradient-left(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
+		.opacity(@factor)
+		.transform(@args)
+			.rotate(@deg)
+			.scale(@factor)
+			.translate(@x,@y)
+			.translate3d(@x,@y,@z)
+			.translateHardware(@x,@y) *
+        .text-shadow(@args)
+		.transition(@args)
+			.transition-delay(@delay)
+			.transition-duration(@duration)
+			.transition-property(@property)
+			.transition-timing-function(@function)
+
+
+
+	Credit to LESS Elements for the motivation and
+	to CSS3Please.com for implementation.
+
+	Copyright (c) 2012 Joel Sutherland
+	MIT Licensed:
+	http://www.opensource.org/licenses/mit-license.php
+
+-----------------------------------------------------*/
+/* Animation */
+/* Background Size */
+/* Border Radius */
+/* Box Shadows */
+/* Box Sizing */
+/* Columns */
+/* Gradients */
+/* Opacity */
+/* Text Shadow */
+/* Transforms */
+/* Transitions */
+.page-NewFlashCards {
+  overflow-x: hidden;
+  background-color: #cbcfd6;
+}
+.page-NewFlashCards h1 {
+  margin: 0;
+  padding: 1ex 0 1ex 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-NewFlashCards .flashcards-nav {
+  display: table;
+  width: 100%;
+  height: 40px;
+}
+.page-NewFlashCards .flashcards-nav a {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  background-color: #333;
+  border-top: 1px solid #000;
+  border-left: 1px solid #202020;
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+.page-NewFlashCards .flashcards-nav a:hover {
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+.page-NewFlashCards .flashcards-nav a .icon {
+  background-image: url(/shared/images/course/flashcards-nav-icons.png);
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 1px auto;
+  background-repeat: no-repeat;
+  background-size: 135px 135px;
+}
+.page-NewFlashCards .flashcards-nav a.back .icon {
+  background-position: 0 0;
+}
+.page-NewFlashCards .flashcards-nav a.back.enabled .icon {
+  background-position: 0 -45px;
+}
+.page-NewFlashCards .flashcards-nav a.next .icon {
+  background-position: -45px 0;
+}
+.page-NewFlashCards .flashcards-nav a.next.enabled .icon {
+  background-position: -45px -45px;
+}
+.page-NewFlashCards .flashcards-nav a.fav .icon {
+  background-position: -90px 0;
+}
+.page-NewFlashCards .flashcards-nav a.fav.enabled .icon {
+  background-position: -90px -45px;
+}
+.page-NewFlashCards .flashcards-nav a.fav.added .icon {
+  background-position: -90px -90px;
+}
+.page-NewFlashCards #bookmarked_notification {
+  padding: 10px;
+  background-color: #C9F3A7;
+  color: #079608;
+  text-align: center;
+  font-weight: bold;
+}
+.page-NewFlashCards .step-flashcard {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+@keyframes bookmark_added_anim {
+  0% {
+    height: 0;
+  }
+  60% {
+    height: 30px;
+  }
+  100% {
+    height: 30px;
+  }
+}
+@-webkit-keyframes bookmark_added_anim {
+  0% {
+    height: 0;
+  }
+  60% {
+    height: 30px;
+  }
+  100% {
+    height: 30px;
+  }
+}
+.page-NewFlashCards #bookmarked_notification {
+  height: 0px;
+  overflow: hidden;
+  padding: 0px;
+  -webkit-animation-name: bookmark_added_anim;
+  -moz-animation-name: bookmark_added_anim;
+  -ms-animation-name: bookmark_added_anim;
+  -o-animation-name: bookmark_added_anim;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  -ms-animation-fill-mode: none;
+  -o-animation-fill-mode: none;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+}
+.page-NewFlashCards #bookmarked_notification span {
+  display: block;
+  margin: 6px 0 0 0;
+}
+.page-NewFlashCards #bookmarked_notification.show {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+}
+.page-NewFlashCards #steps {
+  display: block;
+  margin: 0 0 0 0;
+  padding: 0;
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+.page-NewFlashCards #steps li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform linear 0.7s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+}
+.page-NewFlashCards #steps li.current ~ li {
+  display: block;
+  -webkit-transform: translate3d(100%, 0, 0);
+  height: 0;
+  overflow: hidden;
+}
+.page-NewFlashCards #steps li.current + li {
+  height: auto;
+  overflow: auto;
+}
+.page-NewFlashCards #steps li.current {
+  display: block;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.page-NewFlashCards #steps li .step-content {
+  overflow: hidden;
+}

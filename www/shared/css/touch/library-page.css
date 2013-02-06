@@ -1,0 +1,103 @@
+﻿.library-page .separator {
+  display: block;
+  padding: 3px 10px;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #191c1f;
+  box-shadow: inset 0px 1px 0px #60646a;
+  background: #34373d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f434a), to(#34373d));
+  background-image: -webkit-linear-gradient(#3f434a, #34373d);
+  background-image: -moz-linear-gradient(#3f434a, #34373d);
+  background-image: -ms-linear-gradient(#3f434a, #34373d);
+  background-image: -o-linear-gradient(#3f434a, #34373d);
+  background-image: linear-gradient(#3f434a, #34373d);
+}
+.library-page .separator h1 {
+  margin: 5px 0 0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #000000;
+}
+.library-page ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.library-page li {
+  display: block;
+  min-height: 27px;
+}
+.library-page li .arrow-icon {
+  position: absolute;
+  right: 0px;
+  margin: 10px 10px 0 10px;
+  display: block;
+  width: 10px;
+  height: 17px;
+  background-size: 10px 17px;
+  background-image: url(../../images/icon-arrow.png);
+}
+.library-page li .arrow-icon.single {
+  margin: 5px 10px;
+}
+.library-page li a {
+  display: block;
+  padding: 3px 10px;
+  background: #e4e4e4;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #d6d6d6;
+  text-decoration: none;
+}
+.library-page li a .title {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.library-page li a .title:first-letter {
+  text-transform: uppercase;
+}
+.library-page li a .title.single {
+  padding: 5px 0;
+}
+.library-page li a .meaning {
+  color: #606060;
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  overflow: hidden;
+  line-height: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.library-page li a:hover {
+  display: block;
+  border-top: 1px solid #f8c462;
+  text-shadow: 0 -1px 1px #f8c462;
+  border-bottom: 1px solid #ab460f;
+  background: #d25f0e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0a742), to(#d25f0e));
+  background-image: -webkit-linear-gradient(#f0a742, #d25f0e);
+  background-image: -moz-linear-gradient(#f0a742, #d25f0e);
+  background-image: -ms-linear-gradient(#f0a742, #d25f0e);
+  background-image: -o-linear-gradient(#f0a742, #d25f0e);
+  background-image: linear-gradient(#f0a742, #d25f0e);
+}
+.library-page li a:hover .meaning {
+  color: #752202;
+}
+.userless .library-page li a {
+  min-height: 27px;
+}
+.userless .library-page li a .arrow-icon {
+  margin-top: 6px;
+}
+.userless .library-page li a .title {
+  padding-top: 7px;
+}
