@@ -1,0 +1,7 @@
+﻿.course-BodyLanguage.page-NewTest .question {
+  font-size: 122%;
+  box-shadow: none;
+}
+.course-BodyLanguage.page-NewTest .question h2::after {
+  content: '?';
+}

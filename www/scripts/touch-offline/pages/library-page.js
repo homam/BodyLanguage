@@ -20,6 +20,9 @@ var MLearning;
                     var ul = $("#library-bookmarks");
                     var queryString = $.parsequery(location.href);
                     this.service.getLibraryModelForMyCurrentCourse().done(function (levels) {
+                        if(levels.length == 0) {
+                            $("#empty-library-msg").show();
+                        }
                         levels.forEach(function (level) {
                             if(!!level.steps && !!level.steps.length) {
                                 var levelElement = levelTemplate.clone();

@@ -228,7 +228,7 @@
 }
 .page-NewTest a.choice .text img {
   width: 160px;
-  border: 1px solid #ccc;
+  margin-bottom: 3px;
 }
 .page-NewTest a.choice .letter {
   display: table-cell;
@@ -266,6 +266,9 @@
   font-size: 14px;
   margin: 5px 5px;
   min-height: 160px;
+}
+.page-NewTest .question-type-TextOptionsTestStep img {
+  margin-top: 10px;
 }
 .page-NewTest .level-step.result .step-content {
   margin-top: 10px;
