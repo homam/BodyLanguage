@@ -183,11 +183,11 @@ body {
 }
 /* ICONS */
 .ui-icon-loading {
-  background: url(/Shared/images/ajax-loader.gif);
+  background: url(../../../shared/images/ajax-loader.gif);
 }
 .ui-icon,
 .ui-icon-searchfield:after {
-  background-image: url(/Shared/images/icons-18-white.png);
+  background-image: url(../../../shared/images/icons-18-white.png);
 }
 /*Arabic Settings*/
 .dir-rtl {

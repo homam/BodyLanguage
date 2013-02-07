@@ -246,7 +246,7 @@
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: right center;
-  background-image: url(/shared/images/course/correct.png);
+  background-image: url(../../../shared/images/course/correct.png);
 }
 .page-NewTest .revealAnswer .choice[data-correct=false][data-selected=true] {
   color: white;
@@ -255,7 +255,7 @@
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: right center;
-  background-image: url(/shared/images/course/wrong.png);
+  background-image: url(../../../shared/images/course/wrong.png);
 }
 .page-NewTest .question-type-ImageOptionsTestStep .choice {
   min-height: 141px;
