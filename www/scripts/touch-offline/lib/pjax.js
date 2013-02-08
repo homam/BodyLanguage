@@ -90,7 +90,7 @@
         }
 
         //setTimeout(function() {
-            pjax($.extend({ }, defaults, options))
+        pjax($.extend({}, defaults, options))
         //}, 10000);
 
         event.preventDefault()
@@ -277,7 +277,7 @@
                 if (target.length) $(window).scrollTop(target.offset().top)
             }
 
-            
+
         }
 
 
@@ -611,6 +611,8 @@
 
         } else if (!/<html/i.test(data)) {
             obj.contents = $body
+        } else {
+            obj.contents = $body.find("#wrap") // added by homam
         }
 
         // Clean up any <title> tags
